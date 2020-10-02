@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/viewControlPlayer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wrap_control" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#5a000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/drop_shadow_on_top" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/play_video_title" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/view_control_size_small" android:maxLines="1" android:lines="1" android:minLines="1" android:layout_toLeftOf="@id/control_right" android:layout_toRightOf="@id/iv_back_large_player" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/control_right" android:layout_width="wrap_content" android:layout_height="@dimen/view_control_size_small" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/iv_launch_app" android:background="@drawable/oval_btn_highlight_white_background" android:padding="7.0dip" android:visibility="visible" android:layout_width="@dimen/view_control_size_small" android:layout_height="@dimen/view_control_size_small" android:src="@drawable/ic_launch_black_24dp" android:tint="@color/white" />
+                <ImageView android:id="@id/iv_close_on_full_player" android:background="@drawable/oval_btn_highlight_white_background" android:padding="6.0dip" android:visibility="visible" android:layout_width="@dimen/view_control_size_small" android:layout_height="@dimen/view_control_size_small" android:src="@drawable/ic_close_black_24dp" android:tint="@color/white" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_back_large_player" android:background="@drawable/oval_btn_highlight_white_background" android:padding="6.0dip" android:visibility="visible" android:layout_width="@dimen/view_control_size_small" android:layout_height="@dimen/view_control_size_small" android:src="@drawable/ic_arrow_back_white_48dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@id/control_play_mod" android:background="@drawable/oval_btn_highlight_white_background" android:padding="10.0dip" android:clickable="true" android:layout_width="@dimen/view_control_size_large" android:layout_height="@dimen/view_control_size_large" android:src="@drawable/ic_shuffle_black_24dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/control_skip_previous" android:background="@drawable/oval_btn_highlight_white_background" android:padding="8.0dip" android:clickable="true" android:layout_width="@dimen/view_control_size_xlarge" android:layout_height="@dimen/view_control_size_xlarge" android:src="@drawable/ic_skip_previous_black_24dp" android:tint="@color/white" />
+                <ImageView android:id="@id/control_play_button" android:background="@drawable/oval_btn_highlight_white_background" android:padding="1.0dip" android:clickable="true" android:layout_width="@dimen/view_control_size_xlarge" android:layout_height="@dimen/view_control_size_xlarge" android:src="@drawable/ic_play_circle_outline_black_24dp" android:tint="@color/white" android:contentDescription="@string/play_button" />
+                <ImageView android:id="@id/control_skip_next" android:background="@drawable/oval_btn_highlight_white_background" android:padding="8.0dip" android:clickable="true" android:layout_width="@dimen/view_control_size_xlarge" android:layout_height="@dimen/view_control_size_xlarge" android:src="@drawable/ic_skip_next_black_24dp" android:tint="@color/white" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/control_play_queue" android:background="@drawable/oval_btn_highlight_white_background" android:padding="10.0dip" android:clickable="true" android:layout_width="@dimen/view_control_size_large" android:layout_height="@dimen/view_control_size_large" android:src="@drawable/ic_repeat_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/view_control_size_small" android:layout_marginBottom="5.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/control_play_current_time" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/null_time" />
+                <SeekBar android:id="@id/control_seek_bar" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="0.0dip" android:layout_height="12.0dip" android:maxHeight="3.0dip" android:progressDrawable="@drawable/seekbar_progress_complete" android:minHeight="3.0dip" android:thumb="@drawable/seekbar_thumb_state_default" android:thumbOffset="0.0dip" android:layout_weight="1.0" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/control_play_duration" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/null_time" />
+                <ImageView android:gravity="center" android:id="@id/control_fullscreen_button" android:background="@drawable/oval_btn_highlight_white_background" android:padding="5.0dip" android:layout_width="@dimen/view_control_size_small" android:layout_height="@dimen/view_control_size_small" android:src="@drawable/ic_fullscreen_black_24dp" android:tint="@color/white" android:contentDescription="@string/full_screen_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

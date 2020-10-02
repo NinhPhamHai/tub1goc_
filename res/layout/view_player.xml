@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rabits.freemusic.playtube.playback.view.BackGroundView android:id="@id/view_player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/player_shadow_background" android:background="@drawable/ic_square_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wrap_player" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/plugin_content_margin">
+        <RelativeLayout android:id="@id/view_player_action_bar" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_actionbar_height">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/txt_name_video_small_player" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="txt_name_video_small_player " android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:layout_toStartOf="@id/view_player_collapsed_delete" />
+            <ImageView android:id="@id/view_player_collapsed_delete" android:layout_width="24.0dip" android:layout_height="24.0dip" android:tint="@color/white" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_close_white_24dp" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/player_wrap_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.rabits.freemusic.playtube.playback.view.PlayerView android:id="@id/view_player_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/view_blank" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/cover_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/view_player_control" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/view_player_bottom_info" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/view_player_info" />
+        </LinearLayout>
+    </LinearLayout>
+</com.rabits.freemusic.playtube.playback.view.BackGroundView>

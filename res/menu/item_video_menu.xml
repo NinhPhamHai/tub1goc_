@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:playtube="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/itemPlayNext" android:title="Play" playtube:showAsAction="always|collapseActionView" />
+    <item android:id="@id/itemAddPlaylist" android:title="Add to playlist" playtube:showAsAction="always|collapseActionView" />
+    <item android:id="@id/itemRemove" android:title="Remove" playtube:showAsAction="always|collapseActionView" />
+    <item android:id="@id/itemShare" android:title="Share" playtube:showAsAction="always|collapseActionView" />
+</menu>

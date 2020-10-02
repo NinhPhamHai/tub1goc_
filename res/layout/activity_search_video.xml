@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <AutoCompleteTextView android:layout_gravity="center_vertical" android:id="@id/editText" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/editext_hint" android:singleLine="true" android:inputType="text" android:imeOptions="actionSearch" android:imeActionLabel="Search" android:textCursorDrawable="@drawable/cursor_edittext" android:layout_marginStart="8.0dip" android:layout_marginEnd="52.0dip" />
+                    <ImageView android:layout_gravity="center|right" android:id="@id/imgClose" android:padding="15.0dip" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" app:srcCompat="@drawable/ic_close_white_24dp" />
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout android:id="@id/frame_playlist_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewSuggestion" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:isScrollContainer="false" android:overScrollMode="never" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

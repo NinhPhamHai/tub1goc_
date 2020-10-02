@@ -1,0 +1,41 @@
+{
+  "this_week": [
+    {
+      "image": "music-this-week.jpg",
+      "title": "This Week",
+      "playlistID": "PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
+    }
+  ],
+  "top_tracks": [
+    {
+      "image": "https://i.ytimg.com/vi/BOUpNtk5Spk/maxresdefault.jpg",
+      "title": "Top Charts - United States",
+      "playlistID": "PLDIoUOhQQPlU2NpvlGKTsQRoCMHTUCLMf"
+    },
+    {
+      "image": "https://i.ytimg.com/vi/E3EpPROnl6w/maxresdefault.jpg",
+      "title": "Top Charts - Mexico",
+      "playlistID": "PLFgquLnL59alW2NIFZN8aD00TCJflQb7J"
+    },
+    {
+      "image": "https://i.ytimg.com/vi/It9bA4iWBJ0/maxresdefault.jpg",
+      "title": "Top Charts - India",
+      "playlistID": "PLFgquLnL59anyL_D9pf-f5orGTvIFI2x_"
+    },
+    {
+      "image": "https://i.ytimg.com/vi/00Fns0IiVZM/maxresdefault.jpg",
+      "title": "Top Charts - Brazil",
+      "playlistID": "PLFgquLnL59alxKOClL2CCGsejK4H9HUCV"
+    },
+    {
+      "image": "https://i.ytimg.com/vi/KLrEGifKK8Y/maxresdefault.jpg",
+      "title": "Top Charts - United Kingdom",
+      "playlistID": "PLFgquLnL59amEA53mO3KiIJRSNAzO-PRZ"
+    },
+    {
+      "image": "https://i.ytimg.com/vi/89kTb73csYg/maxresdefault.jpg",
+      "title": "Top Charts - South Korea",
+      "playlistID": "PLFgquLnL59alGJcdc0BEZJb2p7IgkL0Oe"
+    }
+  ]
+}

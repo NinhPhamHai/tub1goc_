@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:playtube="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/itemPlayAll" android:title="Play all" playtube:showAsAction="never" />
+    <item android:id="@id/itemRename" android:title="Rename" playtube:showAsAction="never" />
+    <item android:id="@id/itemDelete" android:title="Delete" playtube:showAsAction="never" />
+</menu>
